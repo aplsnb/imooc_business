@@ -1,0 +1,60 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol true
+            url 'http://localhost:8081/repository/imooc_releases/'
+            credentials {
+                username 'admin'
+                password 'zxcv123456789'
+            }
+        }
+        maven {
+            allowInsecureProtocol true
+            url 'http://localhost:8081/repository/imooc_snapshots/'
+            credentials {
+                username 'admin'
+                password 'zxcv123456789'
+            }
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            allowInsecureProtocol true
+            url 'http://localhost:8081/repository/imooc_releases/'
+            credentials {
+                username 'admin'
+                password 'zxcv123456789'
+            }
+        }
+        maven {
+            allowInsecureProtocol true
+            url 'http://localhost:8081/repository/imooc_snapshots/'
+            credentials {
+                username 'admin'
+                password 'zxcv123456789'
+            }
+        }
+    }
+}
+rootProject.name = "imooc_business"
+include ':app'
+include ':imooc_voice'
+include ':lib_audio'
+include ':lib_video'
+include ':lib_common_ui'
+include ':lib_image_loader'
+include ':lib_network'
+include ':lib_pull_alive'
+include ':lib_qrcode'
+include ':lib_share'
+include ':lib_update'
+include ':lib_web_view'
